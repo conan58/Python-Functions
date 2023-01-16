@@ -1,0 +1,13 @@
+A function that takes a list of words and a character as parameter and returns the words that start with the given character:
+
+def words_start_with(words, char):
+    result = []
+    for word in words:
+        if word[0].lower() == char.lower():
+            result.append(word)
+    return result
+
+words = ["apple", "banana", "Cat", "dog", "Elephant"]
+char = "e"
+result = words_start_with(words, char)
+print(result) # ["Elephant"]
