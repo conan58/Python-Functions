@@ -1,0 +1,23 @@
+Sure, here's an example of a Python program that uses two functions:
+
+def calculate_sum(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+def main():
+    numbers = [1, 2, 3, 4, 5]
+    result = calculate_sum(numbers)
+    print("The sum of the numbers is:", result)
+
+if __name__ == '__main__':
+    main()
+
+In this example, the calculate_sum function takes a list of numbers as a parameter and returns the sum of all the numbers. The main function is where the program starts executing and it calls the calculate_sum function with the list of numbers and assigns the returned value to result variable. Then, it prints the result.
+
+A special line if __name__ == '__main__': is used to check if the python file is being run as the main program or if it's being imported as a module in another script. If it's the main program the main function is executed.
+
+You can also see that the calculate_sum function doesn't know anything about the main function, it just takes a list of numbers and returns the sum of them, this is the abstraction concept in action, making the code more readable and easy to understand.
+
+You could also change the main function to use the function multiple times, or even use it with different inputs and so on, that way you could use the function multiple times without duplicating the code or having to rewrite it.
