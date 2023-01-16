@@ -1,0 +1,11 @@
+A function that takes a list of numbers as a parameter and returns the sum of all the numbers:
+
+def sum_list(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+nums = [1, 2, 3, 4, 5]
+result = sum_list(nums)
+print(result) # 15
